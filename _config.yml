@@ -228,7 +228,7 @@ collections:
   talks:
     output: false
     permalink: /:collection/:path/
-  publications:
+  software:
     output: true
     permalink: /:collection/:path/
 
