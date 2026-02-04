@@ -11,7 +11,7 @@ redirect_from:
 ## About me
 
 ![Illustration of a network](/images/network.png){: .align-right width="400px"}
-👨🏻‍💻 I'm a first year Ph.D. student in the Department of Computer Science at the [**University of Illinois Chicago (UIC)**](https://www.uic.edu/).
+👨🏻‍💻 I'm a second year Ph.D. student in the Department of Computer Science at the [**University of Illinois Chicago (UIC)**](https://www.uic.edu/).
 - I am working under the supervision of professor [Elena Zheleva](https://www.cs.uic.edu/~elena/) in the EDGES lab, a statistical relational learning and data science lab.
 
 🔬 My research interests lie at the intersection of Causal Inference, Data Science, and Graph-based Learning
