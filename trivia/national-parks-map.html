@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Parks Map</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <style>
+      :root {
+        --bg: #faf8f2;
+        --panel: #f3efe3;
+        --line: #d7d0c0;
+        --ink: #1f1f1f;
+        --muted: #6d675b;
+        --visited: #b22222;
+        --planned: #d4af37;
+        --not-visited: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .panel {
+        padding: 14px 16px 12px;
+        border-bottom: 1px solid var(--line);
+        background: linear-gradient(180deg, #fbfaf6 0%, #f4f0e6 100%);
+      }
+
+      .panel h2 {
+        margin: 0 0 8px;
+        font-size: 1.1rem;
+      }
+
+      .panel p {
+        margin: 0 0 10px;
+        color: var(--muted);
+        line-height: 1.45;
+        font-size: 0.95rem;
+      }
+
+      .meta,
+      .legend,
+      .views {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        font-size: 0.93rem;
+      }
+
+      .legend-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .swatch {
+        width: 14px;
+        height: 14px;
+        border-radius: 999px;
+        border: 2px solid #222222;
+      }
+
+      .swatch.visited {
+        background: var(--visited);
+      }
+
+      .swatch.not-visited {
+        background: var(--not-visited);
+      }
+
+      .swatch.planned {
+        background: var(--planned);
+      }
+
+      .views button {
+        appearance: none;
+        border: 1px solid #bbb29f;
+        background: #ffffff;
+        color: var(--ink);
+        border-radius: 999px;
+        padding: 6px 12px;
+        font: inherit;
+        cursor: pointer;
+      }
+
+      .views button:hover {
+        background: #f6f3ea;
+      }
+
+      #map {
+        flex: 1;
+        min-height: 560px;
+      }
+
+      .leaflet-popup-content {
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+
+      .park-status {
+        margin-top: 6px;
+        font-weight: 700;
+      }
+
+      .footnote {
+        padding: 10px 16px 14px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.84rem;
+        background: #fbfaf6;
+      }
+
+      @media (max-width: 720px) {
+        .panel {
+          padding: 12px;
+        }
+
+        #map {
+          min-height: 480px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="panel">
+        <h2>U.S. National Parks</h2>
+        <p>
+          This version uses a geographic basemap and plots each park directly from its latitude and longitude.
+        </p>
+
+        <div class="meta">
+          <span id="visited-count"></span>
+          <span id="planned-count"></span>
+          <span id="remaining-count"></span>
+          <span id="total-count"></span>
+        </div>
+
+        <div class="legend">
+          <span class="legend-item"><span class="swatch visited"></span>Visited</span>
+          <span class="legend-item"><span class="swatch planned"></span>Planning to visit</span>
+          <span class="legend-item"><span class="swatch not-visited"></span>Not visited yet</span>
+        </div>
+
+        <div class="views">
+          <button type="button" data-view="lower48">Lower 48</button>
+          <button type="button" data-view="alaska">Alaska</button>
+          <button type="button" data-view="hawaiiPacific">Hawaii + Pacific</button>
+          <button type="button" data-view="caribbean">Caribbean</button>
+          <button type="button" data-view="full">Full view</button>
+        </div>
+      </div>
+
+      <div id="map" aria-label="Map of U.S. national parks"></div>
+
+      <div class="footnote">
+        The basemap uses Esri World Imagery tiles, so an internet connection is still needed to see the satellite layer in local preview.
+      </div>
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./national-parks-data.js"></script>
+    <script>
+      const parks = window.NATIONAL_PARKS || [];
+
+      const views = {
+        lower48: { center: [39.5, -98.35], zoom: 4 },
+        alaska: { center: [63.5, -152.0], zoom: 4 },
+        hawaiiPacific: { center: [15.0, -160.0], zoom: 3 },
+        caribbean: { center: [18.25, -64.8], zoom: 8 }
+      };
+
+      const map = L.map("map", {
+        zoomControl: true,
+        preferCanvas: true,
+        worldCopyJump: false,
+        minZoom: 2,
+        maxZoom: 12
+      }).setView(views.lower48.center, views.lower48.zoom);
+
+      L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+        maxZoom: 19,
+        attribution: "Powered by Esri | Sources: Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+      }).addTo(map);
+
+      function parkStatus(park) {
+        if (park.visited) {
+          return { label: "Visited", fillColor: "#b22222", radius: 7 };
+        }
+        if (park.planned) {
+          return { label: "Planning to visit", fillColor: "#d4af37", radius: 6.5 };
+        }
+        return { label: "Not visited yet", fillColor: "#ffffff", radius: 6 };
+      }
+
+      function markerStyle(park) {
+        const status = parkStatus(park);
+        return {
+          radius: status.radius,
+          color: "#1f1f1f",
+          weight: 1.6,
+          fillColor: status.fillColor,
+          fillOpacity: 1
+        };
+      }
+
+      const markerLayer = L.featureGroup();
+
+      parks.forEach((park) => {
+        const status = parkStatus(park);
+        const marker = L.circleMarker([park.lat, park.lng], markerStyle(park));
+
+        marker.bindPopup(
+          "<strong>" + park.name + " National Park</strong><br>" +
+          park.state + "<div class=\"park-status\">" + status.label + "</div>"
+        );
+        marker.bindTooltip(park.name, { direction: "top", offset: [0, -4] });
+        markerLayer.addLayer(marker);
+      });
+
+      markerLayer.addTo(map);
+
+      const allBounds = markerLayer.getBounds();
+
+      document.querySelectorAll("[data-view]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const key = button.dataset.view;
+          if (key === "full") {
+            map.fitBounds(allBounds.pad(0.08));
+            return;
+          }
+          const view = views[key];
+          map.setView(view.center, view.zoom);
+        });
+      });
+
+      const visited = parks.filter((park) => park.visited).length;
+      const planned = parks.filter((park) => !park.visited && park.planned).length;
+      const total = parks.length;
+      const remaining = total - visited - planned;
+
+      document.getElementById("visited-count").textContent = "Visited: " + visited;
+      document.getElementById("planned-count").textContent = "Planning to visit: " + planned;
+      document.getElementById("remaining-count").textContent = "Not visited yet: " + remaining;
+      document.getElementById("total-count").textContent = "Total parks tracked: " + total;
+    </script>
+  </body>
+</html>
