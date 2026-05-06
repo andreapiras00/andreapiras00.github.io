@@ -35,7 +35,7 @@ National parks are one of the easiest ways to make me excited about a trip. Sinc
 <iframe
   src="{{ '/trivia/national-parks-map.html' | relative_url }}"
   title="Map of U.S. national parks"
-  loading="lazy"
+  loading="eager"
   style="width: 100%; height: 680px; border: 1px solid #d5d5d5; border-radius: 8px;"
 ></iframe>
 
@@ -48,7 +48,7 @@ Zion is currently at the top of my list. The landscape feels almost unreal, and 
 <img
   src="{{ '/images/zion.jpeg' | relative_url }}"
   alt="Zion National Park"
-  style="display: block; width: 260px; max-width: 100%; height: auto; margin: 0.75rem 0 1.25rem auto; border-radius: 8px;"
+  style="display: block; width: 260px; max-width: 100%; height: auto; margin: 0.75rem auto 1.25rem auto; border-radius: 8px;"
 />
 
 
@@ -59,7 +59,7 @@ Since I first learned as a child that the largest trees in the world existed the
 <img
   src="{{ '/images/sequoia.jpeg' | relative_url }}"
   alt="Sequoia National Park"
-  style="display: block; width: 260px; max-width: 100%; height: auto; margin: 0.75rem 0 1.25rem auto; border-radius: 8px;"
+  style="display: block; width: 260px; max-width: 100%; height: auto; margin: 0.75rem auto 1.25rem auto; border-radius: 8px;"
 />
 
 #### 3. Bryce Canyon
@@ -69,7 +69,7 @@ The sunrise view from this place was nothing short of spectacular. The snow-cove
 <img
   src="{{ '/images/bryce.jpeg' | relative_url }}"
   alt="Bryce Canyon National Park"
-  style="display: block; width: 360px; max-width: 100%; height: auto; margin: 0.75rem 0 1.25rem auto; border-radius: 8px;"
+  style="display: block; width: 360px; max-width: 100%; height: auto; margin: 0.75rem auto 1.25rem auto; border-radius: 8px;"
 />
 
 ## Speedcubing
