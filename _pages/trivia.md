@@ -20,12 +20,10 @@ I can speak six languages to different degrees. Being European is definetly a ch
 | Spanish | Basic | Familiar thanks to its closeness to other languages I speak. I have never properly studied it, but I'm comfortable enough to understand it and hold day-to-day conversations with natives. |
 | French | Basic | Very basic knowledge, despite studying it for 3 years in middle school (I'm apologize to my professor for not continue my studies since). |
 
-## Ultra-Centenarian Genes
+## Six Degrees of Separation
 
-Part of my family background, as described above, comes from Sardinia.
-
-This italian island is one of the world's most famous ["Blue Zones"](https://www.bluezones.com/explorations/sardinia-italy/), meaning one of the places often associated with an unusually high concentration of very old people, including ultra-centenarians.
-Disclaimer: I am definitely not claiming any secret formula for a long life.
+As someone whose research focuses on networks and graph-based thinking, this feels like a very on-brand piece of trivia. I have always liked the [small-world](https://en.wikipedia.org/wiki/Six_degrees_of_separation) graph concept that says people are often connected through at most 6 chains of acquaintances.
+I can personally confirm this one, since I verified that I'm only **four people** away from former President Barack Obama. 
 
 ## National Parks
 
@@ -70,6 +68,13 @@ The sunrise view from this place was nothing short of spectacular. The snow-cove
   alt="Bryce Canyon National Park"
   style="display: block; width: 360px; max-width: 100%; height: auto; margin: 0.75rem auto 1.25rem auto; border-radius: 8px;"
 />
+
+## Ultra-Centenarian Genes
+
+Part of my family background, as described above, comes from Sardinia.
+
+This italian island is one of the world's most famous ["Blue Zones"](https://www.bluezones.com/explorations/sardinia-italy/), meaning one of the places often associated with an unusually high concentration of very old people, including ultra-centenarians.
+Disclaimer: I am definitely not claiming any secret formula for a long life.
 
 ## Speedcubing
 
