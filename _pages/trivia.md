@@ -45,25 +45,32 @@ National parks are one of the easiest ways to make me excited about a trip. Sinc
 
 Zion is currently at the top of my list. The landscape feels almost unreal, and the Angels Landing trail was an incredible and nerve-wracking experience.
 
-<!-- Optional image:
-![Bryce Canyon](/images/trivia/bryce-canyon.jpg){: .align-right width="260px"}
--->
+<img
+  src="{{ '/images/zion.jpeg' | relative_url }}"
+  alt="Zion National Park"
+  style="display: block; width: 260px; max-width: 100%; height: auto; margin: 0.75rem 0 1.25rem auto; border-radius: 8px;"
+/>
+
 
 #### 2. Sequoia
 
 Since I first learned as a child that the largest trees in the world existed there, I dreamed of one day standing beside one and hugging one of these giants. Eventually, I got to make that childhood dream come true.
 
-<!-- Optional image:
-![Second favourite park](/images/trivia/second-favorite.jpg){: .align-right width="260px"}
--->
+<img
+  src="{{ '/images/sequoia.jpeg' | relative_url }}"
+  alt="Sequoia National Park"
+  style="display: block; width: 260px; max-width: 100%; height: auto; margin: 0.75rem 0 1.25rem auto; border-radius: 8px;"
+/>
 
 #### 3. Bryce Canyon
 
 The sunrise view from this place was nothing short of spectacular. The snow-covered landscape will forever remain one of the best memories from this trip.
 
-<!-- Optional image:
-![Third favourite park](/images/trivia/third-favorite.jpg){: .align-right width="260px"}
--->
+<img
+  src="{{ '/images/bryce.jpeg' | relative_url }}"
+  alt="Bryce Canyon National Park"
+  style="display: block; width: 360px; max-width: 100%; height: auto; margin: 0.75rem 0 1.25rem auto; border-radius: 8px;"
+/>
 
 ## Speedcubing
 
@@ -71,6 +78,6 @@ I have been an amateur speedcuber since 2012. It started as a fun challenge and 
 
 My personal best on the standard 3x3 cube is **12.42 seconds**, using the [GAN 356X](https://www.thecubicle.com/products/gan356-x). I am absolutely not a world-class solver, but it's still fun being able to solve one fast enough to surprise people.
 
-### Order of the Engineer
+## Order of the Engineer
 
 On April 8, 2026, I officially joined the [**Order of the Engineer**](https://order-of-the-engineer.org/). I like that it represents not just technical training, but also a public commitment to the responsibility that comes with being an engineer. Also, considering the cost of my education, the ring that comes with it is most probably the most expensive jewelry I will ever own.

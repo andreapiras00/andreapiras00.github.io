@@ -19,15 +19,15 @@ main:
     
   - title: "Software"
     url: /software/
-
-  - title: "Trivia"
-    url: /trivia/
         
   # - title: "Blog Posts"
   #   url: /year-archive/
     
   - title: "Resume"
     url: /files/Resume.pdf
+
+  - title: "Trivia"
+    url: /trivia/
     
   # - title: "CV"
   #   url: /cv-json/
