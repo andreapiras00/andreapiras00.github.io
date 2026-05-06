@@ -9,7 +9,7 @@ author_profile: true
 
 ## Languages
 
-I speak about six languages to different degrees, which is one of the parts of my background I appreciate most.
+I can speak six languages to different degrees. Being European is definetly a cheat code.
 
 | Language | Level | Notes |
 | --- | --- | --- |
