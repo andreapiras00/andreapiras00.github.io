@@ -15,10 +15,10 @@ I can speak six languages to different degrees. Being European is definetly a ch
 | --- | --- | --- |
 | Italian | Native | My first language and still the most beautiful one, in my opinion. |
 | English | Fluent | The language I now use every day for research, teaching, and life in the U.S. |
-| Venetian | Native | Despite being officially recognized only as a dialect (from the Veneto region), it still matches the definition of language, which is why I added it to the list. |
+| Venetian | Advanced | Despite being officially recognized only as a dialect (from the Veneto region), it still matches the definition of language, which is why I added it to the list. |
 | Catalan | Intermediate | My father was born in [Alghero](https://en.wikipedia.org/wiki/Alghero), a small town in the North-Eastern side of Sardinia. This town is one of the few places outside of Spain that still speaks a variety Catalan (*alguerés*). |
 | Spanish | Basic | Familiar thanks to its closeness to other languages I speak. I have never properly studied it, but I'm comfortable enough to understand it and hold day-to-day conversations with natives. |
-| French | Basic | Very basic knowledge, despite studying it for 3 years in middle school (I'm apologize to my professor for not continue my studies since). |
+| French | Basic | Very basic knowledge, despite studying it for 3 years in middle school (I'm apologize to my professor for not continuing my studies since). |
 
 ## Six Degrees of Separation
 
