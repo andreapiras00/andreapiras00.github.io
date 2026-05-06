@@ -16,17 +16,16 @@ I speak about six languages to different degrees, which is one of the parts of m
 | Italian | Native | My first language and still the most beautiful one, in my opinion. |
 | English | Fluent | The language I now use every day for research, teaching, and life in the U.S. |
 | Venetian | Native | Despite being officially recognized only as a dialect (from the Veneto region), it still matches the definition of language, which is why I added it to the list. |
-| Catalan | Intermediate | My father was born in [Alghero](https://en.wikipedia.org/wiki/Alghero), a small town in the North-Eastern side of Sardinia. This town is the only place outside of Spain that still speaks a variety Catalan (*alguerés*). |
+| Catalan | Intermediate | My father was born in [Alghero](https://en.wikipedia.org/wiki/Alghero), a small town in the North-Eastern side of Sardinia. This town is one of the few places outside of Spain that still speaks a variety Catalan (*alguerés*). |
 | Spanish | Basic | Familiar thanks to its closeness to other languages I speak. I have never properly studied it, but I'm comfortable enough to understand it and hold day-to-day conversations with natives. |
 | French | Basic | Very basic knowledge, despite studying it for 3 years in middle school (I'm apologize to my professor for not continue my studies since). |
 
 ## Ultra-Centenarian Genes
 
-Part of my family background, as described aboce, comes from Sardinia.
+Part of my family background, as described above, comes from Sardinia.
 
 This italian island is one of the world's most famous ["Blue Zones"](https://www.bluezones.com/explorations/sardinia-italy/), meaning one of the places often associated with an unusually high concentration of very old people, including ultra-centenarians.
-I am definitely not claiming any secret formula for a long life, but it is still a fun and meaningful piece of trivia about where I come from.
-
+Disclaimer: I am definitely not claiming any secret formula for a long life.
 
 ## National Parks
 
