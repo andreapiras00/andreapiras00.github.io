@@ -21,10 +21,10 @@ window.NATIONAL_PARKS = [
   { name: "Everglades", state: "Florida", lat: 25.32, lng: -80.93, pixelX: 1565, pixelY: 1349, visited: false },
   { name: "Gates of the Arctic", state: "Alaska", lat: 67.78, lng: -153.3, pixelX: 111, pixelY: 1120, visited: false },
   { name: "Gateway Arch", state: "Missouri", lat: 38.63, lng: -90.19, pixelX: 1087, pixelY: 880, visited: false },
-  { name: "Glacier", state: "Montana", lat: 48.7, lng: -113.8, pixelX: 467, pixelY: 393, visited: false },
+  { name: "Glacier", state: "Montana", lat: 48.7, lng: -113.8, pixelX: 467, pixelY: 393, planned: true },
   { name: "Glacier Bay", state: "Alaska", lat: 58.5, lng: -137.0, pixelX: 428, pixelY: 1420, visited: false },
   { name: "Grand Canyon", state: "Arizona", lat: 36.06, lng: -112.14, pixelX: 404, pixelY: 930, visited: true },
-  { name: "Grand Teton", state: "Wyoming", lat: 43.79, lng: -110.68, pixelX: 489, pixelY: 657, planned: true },
+  { name: "Grand Teton", state: "Wyoming", lat: 43.79, lng: -110.68, pixelX: 489, pixelY: 657, visited: true },
   { name: "Great Basin", state: "Nevada", lat: 38.98, lng: -114.3, pixelX: 416, pixelY: 770, visited: false },
   { name: "Great Sand Dunes", state: "Colorado", lat: 37.73, lng: -105.51, pixelX: 646, pixelY: 844, visited: false },
   { name: "Great Smoky Mountains", state: "North Carolina and Tennessee", lat: 35.68, lng: -83.53, pixelX: 1308, pixelY: 1017, visited: false },
@@ -60,7 +60,7 @@ window.NATIONAL_PARKS = [
   { name: "White Sands", state: "New Mexico", lat: 32.78, lng: -106.17, pixelX: 578, pixelY: 1177, visited: false },
   { name: "Wind Cave", state: "South Dakota", lat: 43.57, lng: -103.48, pixelX: 713, pixelY: 626, visited: false },
   { name: "Wrangell-St. Elias", state: "Alaska", lat: 61.0, lng: -142.0, pixelX: 322, pixelY: 1312, visited: false },
-  { name: "Yellowstone", state: "Wyoming, Montana, and Idaho", lat: 44.6, lng: -110.5, pixelX: 520, pixelY: 567, planned: true },
-  { name: "Yosemite", state: "California", lat: 37.83, lng: -119.5, pixelX: 187, pixelY: 803, visited: false },
+  { name: "Yellowstone", state: "Wyoming, Montana, and Idaho", lat: 44.6, lng: -110.5, pixelX: 520, pixelY: 567, visited: true },
+  { name: "Yosemite", state: "California", lat: 37.83, lng: -119.5, pixelX: 187, pixelY: 803, planned: true },
   { name: "Zion", state: "Utah", lat: 37.3, lng: -113.05, pixelX: 387, pixelY: 837, visited: true }
 ];

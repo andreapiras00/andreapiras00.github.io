@@ -27,7 +27,7 @@ I can personally confirm this one, since I verified that I'm only **four people*
 
 ## National Parks
 
-National parks are one of the easiest ways to make me excited about a trip. Since I started living in the U.S., I try to visit at least a couple every year (honestly, best thing about this country). Below there's a small map so I can keep track of which ones I have visited and which ones are still on the list.
+National parks are one of the easiest ways to make me excited about a trip. Since I started living in the U.S., I try to visit at least a couple every year (honestly, best thing about this country). Below there's a small map so I can keep track of which ones I have visited and which ones are on the "to visit" list.
 
 <iframe
   src="{{ '/trivia/national-parks-map.html' | relative_url }}"
@@ -48,8 +48,18 @@ Zion is currently at the top of my list. The landscape feels almost unreal, and 
   style="display: block; width: 260px; max-width: 100%; height: auto; margin: 0.75rem auto 1.25rem auto; border-radius: 8px;"
 />
 
+#### 2. Grand Teton
 
-#### 2. Sequoia
+Grand Teton had some of the craziest views I have seen so far. The mountain range feels dramatic from almost every angle, and the amount of wildlife made the experience even more memorable (I even got to see a bear up close!).
+
+<img
+  src="{{ '/images/teton.jpeg' | relative_url }}"
+  alt="Grand Teton National Park"
+  style="display: block; width: 360px; max-width: 100%; height: auto; margin: 0.75rem auto 1.25rem auto; border-radius: 8px;"
+/>
+
+
+#### 3. Sequoia
 
 Since I first learned as a child that the largest trees in the world existed there, I dreamed of one day standing beside one and hugging one of these giants. Eventually, I got to make that childhood dream come true.
 
@@ -59,15 +69,6 @@ Since I first learned as a child that the largest trees in the world existed the
   style="display: block; width: 260px; max-width: 100%; height: auto; margin: 0.75rem auto 1.25rem auto; border-radius: 8px;"
 />
 
-#### 3. Bryce Canyon
-
-The sunrise view from this place was nothing short of spectacular. The snow-covered landscape will forever remain one of the best memories from this trip.
-
-<img
-  src="{{ '/images/bryce.jpeg' | relative_url }}"
-  alt="Bryce Canyon National Park"
-  style="display: block; width: 360px; max-width: 100%; height: auto; margin: 0.75rem auto 1.25rem auto; border-radius: 8px;"
-/>
 
 ## Ultra-Centenarian Genes
 
